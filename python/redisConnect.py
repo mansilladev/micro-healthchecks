@@ -3,10 +3,10 @@
 import redis
 from redis import ConnectionError
 
-config = { 'server': 'localhost', 'port': '6379' }
+config = { 'server': 'localhost', 'port': '6379', 'db': '0'}
 
 print 'Content-type: application/json'
-r_server = redis.StrictRedis(host=config['server'], port=config['port'], db=0)
+r_server = redis.StrictRedis(host=config['server'], port=config['port'], db=config['db'])
 
 try:
     r_server.ping()
