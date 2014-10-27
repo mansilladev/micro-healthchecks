@@ -21,6 +21,15 @@ or
 }
 ```
 
+PHP
+---
+####MySQL > php/mysqlConnect.php
+This script uses PHP's internal mysqli extension. A valid username and password is required. `$config['server]` includes hostname and port number (e.g. `127.0.0.1:3306`).
+
+Python
+------
+####Redis > python/redisConnect.py
+This script requires the well supported `redis-py` library ([GitHub link](https://github.com/andymccurdy/redis-py)), which is installable by pip, easy_install or from source.
 
 License
 -------
