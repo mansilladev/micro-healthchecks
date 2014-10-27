@@ -29,7 +29,7 @@ This script uses PHP's internal mysqli extension. A valid username and password 
 Python
 ------
 ####Redis > python/redisConnect.py
-This script requires the well supported `redis-py` library ([GitHub link](https://github.com/andymccurdy/redis-py)), which is installable by pip, easy_install or from source.
+This script requires the well supported `redis-py` library ([GitHub link](https://github.com/andymccurdy/redis-py)), which is installable by pip, easy_install or from source. The server hostname (or IP), port and database number are required `config` parameters.
 
 License
 -------
