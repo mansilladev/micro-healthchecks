@@ -31,6 +31,13 @@ Python
 ####Redis > python/redisConnect.py
 This script requires the well supported `redis-py` library ([GitHub link](https://github.com/andymccurdy/redis-py)), which is installable by pip, easy_install or from source.
 
+
+Perl
+------
+####DNS > perl/dnsConnect.py
+This script requires `Net::DNS` which is most easily installed using CPAN. 
+
+
 License
 -------
 See LICENSE file in repo.
