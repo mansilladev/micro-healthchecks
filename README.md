@@ -5,7 +5,7 @@ This is a sample collection of tiny web server scripts that perform health check
 
 The interface for these scripts is minimal. They're intended to be requested via HTTP GET on a web server that supports the script's language with no required inputs in the URI, headers or body.
 
-The output is JSON, and one of the two following responses:
+If the test is successful, the HTTP response code is `200` -- otherwise, it's `503`. The response output is JSON and will be one of the two following responses:
 
 ```
 {
@@ -21,6 +21,8 @@ or
 }
 ```
 
+
+
 PHP
 ---
 ####MySQL > php/mysqlConnect.php
@@ -29,7 +31,7 @@ This script uses PHP's internal mysqli extension. A valid username and password 
 Python
 ------
 ####Redis > python/redisConnect.py
-This script requires the well supported `redis-py` library ([GitHub link](https://github.com/andymccurdy/redis-py)), which is installable by pip, easy_install or from source.
+This script requires the well supported `redis-py` library ([GitHub link](https://github.com/andymccurdy/redis-py)), which is installable by pip, easy_install or from source. The server hostname (or IP), port and database number are required `config` parameters.
 
 
 Perl
