@@ -37,7 +37,12 @@ This script requires the well supported `redis-py` library ([GitHub link](https:
 Perl
 ------
 ####DNS > perl/dnsConnect.py
-This script requires `Net::DNS` which is most easily installed using CPAN. 
+This script requires `Net::DNS` which is most easily installed using CPAN.
+
+.Net
+------
+####MS SQL Server > dotnet/mssqlConnect.cs
+This is a Web API Controller class that can be dropped into any ASP.NET Web API enabled project.  The server connection string parameters need to be supplied.
 
 
 License
