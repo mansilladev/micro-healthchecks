@@ -10,6 +10,8 @@ using Newtonsoft.Json.Linq;
 
 namespace MicroHealthChecks
 {
+    // API controller that processes a HTTP GET by checking if it
+    // can connect and login to a Microsoft SQL Server database
     public class MSSQLConnectController : ApiController
     {
 
@@ -36,6 +38,7 @@ namespace MicroHealthChecks
         }
     }
 
+    // Reusable class that generates a HTTP response to indiciate success of micro-health check
     public class SuccessResult : IHttpActionResult
     {
         public static JObject SuccessJson = new JObject(new JProperty("status", "Connection successful"));
@@ -46,6 +49,7 @@ namespace MicroHealthChecks
         }
     }
 
+    // Reusable class that generates a HTTP response to indiciate failure of micro-health check
     public class FailResult : IHttpActionResult
     {
         public static JObject FailJson = new JObject(new JProperty("status", "Unable to connect"));
