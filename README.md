@@ -33,6 +33,8 @@ Python
 ####Redis > python/redisConnect.py
 This script requires the well supported `redis-py` library ([GitHub link](https://github.com/andymccurdy/redis-py)), which is installable by pip, easy_install or from source. The server hostname (or IP), port and database number are required `config` parameters.
 
+####MongoDB > python/mongoConnect.py
+This script requires `PyMongo` ([link](http://api.mongodb.org/python/current/index.html)), which is installable by pip, easy_install or from source. The server URI is required. This does not try to connect to a specific database, nor is it using ping. It only attempts to establish a client connection.
 
 Perl
 ------
